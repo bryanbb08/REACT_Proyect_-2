@@ -1,1 +1,51 @@
 
+
+/* body {
+    background: radial-gradient(at 8% 10px, #196e8b, #dbe6e1, #24a8ea55);
+} */
+html {
+    background: radial-gradient(at 4% 50px, #0aa, #12131455);
+}
+
+
+App {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(rgba(255, 0, 0, 0.442), green, blue);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    border-radius: 10px;
+    color: yellowgreen;
+}
+
+.card__title {
+    text-align: center;
+    font-size: 90px;
+    margin-bottom: 0 ;
+}
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, ul, p {
+    margin-top: 0;
+    list-style: 0;
+}
+
+img {
+    display: block;
+} */
