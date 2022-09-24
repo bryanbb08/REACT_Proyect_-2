@@ -1,51 +1,82 @@
-
-
-/* body {
-    background: radial-gradient(at 8% 10px, #196e8b, #dbe6e1, #24a8ea55);
-} */
-html {
-    background: radial-gradient(at 4% 50px, #0aa, #12131455);
-}
-
-
-App {
+.App {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://wallpaperaccess.com/full/3503173.jpg');
 }
 
 .card {
     width: 100%;
     max-width: 400px;
-    background-color: rgb(rgba(255, 0, 0, 0.442), green, blue);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    background-image: radial-gradient(circle at 64.4% -74%, #1e4fe2 0, #e2e7f2a4 50%, #0040a2 100%);
+    color: rgb(119, 18, 18);
+    box-shadow: 0 0 50px rgba(14, 46, 203, 0.5);
+    text-shadow: 1px 1px 5px rgb(29, 30, 29);
     padding: 20px;
     border-radius: 10px;
-    color: yellowgreen;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .card__title {
+    grid-column: span 2;
     text-align: center;
-    font-size: 90px;
-    margin-bottom: 0 ;
+    font-size: 40px;
 }
 
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.card__subtitle {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.card__second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.second__list {
+    display: grid;
+    gap: 5px;
 }
 
-body {
-    margin: 0;
+.second__item span {
+    color: rgb(8, 30, 95);
+    opacity: 0.5;
 }
 
-h1, h2, h3, ul, p {
-    margin-top: 0;
-    list-style: 0;
+.second__item {
+    color: rgb(96, 8, 8);
+    font-size: 20px;
 }
 
-img {
-    display: block;
-} */
+.card__temperature {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card__btn {
+    cursor: pointer;
+    grid-column: span 2;
+    width: 40%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 750;
+    text-shadow: 1px 1px 5px rgb(81, 91, 81);
+    transition: trasform 100ms ease;
+    background-color: rgba(210, 227, 226, 0.729);
+    margin-bottom: 10px;
+}
+
+.card__btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.5);
+    transition: transform 100ms ease;
+}
