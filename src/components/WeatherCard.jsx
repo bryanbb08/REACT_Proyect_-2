@@ -26,7 +26,7 @@ return (
         <h2 className="second__title">"{weather?.weather[0].description}"</h2>
             <ul className="second__list">
                 <li className="second__item">
-                    <span>Wind Speed</span>
+                    <span>Wind Speed </span>
                     {weather?.wind.speed}m/s
                 </li >
                 <li className="second__item">
