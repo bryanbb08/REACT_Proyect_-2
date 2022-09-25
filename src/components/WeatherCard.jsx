@@ -23,18 +23,18 @@ return (
             </section>
 
     <section className="card__second-section">
-        <h3 className="second__title">"{weather?.weather[0].description}"</h3>
+        <h2 className="second__title">"{weather?.weather[0].description}"</h2>
             <ul className="second__list">
                 <li className="second__item">
-                    <span>wind Speed:</span>
+                    <span>Wind Speed</span>
                     {weather?.wind.speed}m/s
-                </li>
+                </li >
                 <li className="second__item">
-                    <span>Clouds:</span>
+                    <span>Clouds </span>
                     {weather?.clouds.all}%
                 </li>
                 <li className="second__item">
-                    <span>Presure:</span>
+                    <span>Presure </span>
                     {weather?.main.pressure}hPa
                 </li>
             </ul>
